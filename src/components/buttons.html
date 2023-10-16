@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"/>
+</head>
+<body class="m-10 font-inter bg-neutral-1000 flex flex-wrap flex-col gap-28">
+    <!-- gap property isn't working -->
+    <h1 class="mb-10 text-48 font-bold text-neutral-50">100x Components</h1>
+    <div class="p-10 m-10 bg-neutral-950 gap-2.5 flex flex-col">
+        <p class="text-neutral-50 mb-10">Default/Hover :</p>
+    <button class="w-80 justify-center rounded-4xl py-2 px-6 bg-neutral-50 text-neutral-1000 backdrop:blur-3xl shadow-3xl font-bold text-center hover:bg-neutral-200">Create account</button>
+    <!-- Adding w-88 is making the button smaller -->
+    <button class="w-96 flex justify-center rounded-4xl py-3 px-6  bg-neutral-50 text-neutral-1000 backdrop:blur-3xl shadow-3xl  font-bold text-center hover:bg-neutral-200">Next</button>
+    <button class="inline-flex font-bold text-neutral-1000 bg-neutral-50  py-2 px-5 text-center justify-center rounded-3.2xl  hover:bg-neutral-200">Follow</button>
+    <button class="text-neutral-50 bg-twitter-blue hover:bg-twitter-blue-hover text-center justify-center  font-inter text-16 font-bold rounded-full py-4 px-20 w-56">Post</button>
+    <button class="text-neutral-50 bg-twitter-blue hover:bg-twitter-blue-hover text-center justify-center font-inter text-16 font-bold  px-6 py-3 rounded-3.2xl ">Post</button>
+    <button class="text-neutral-50 bg-twitter-blue hover:bg-twitter-blue-hover text-center justify-center font-inter text-16 font-bold rounded-full p-5 px-20 w-96 ">Post</button>
+    </div>
+    <div class=" p-10 m-10 bg-neutral-950  flex flex-col gap-2.5">
+        <p class="text-neutral-50 mb-10">Outlined :</p>
+        <button class="w-80 flex justify-center rounded-4xl py-2 px-6 bg-neutral-1000 text-twitter-blue border border-button-stroke backdrop:blur-3xl shadow-3xl font-bold text-center ">Create account</button>
+        <button class="inline-flex py-1.5 px-4 font-bold justify-center text-center rounded-3xl text-neutral-50 border border-button-stroke backdrop-blur-3xl">Following</button>
+        <!-- Follow button needs to be fixed. It got bigger after adding flex property. -->
+    </div>
+
+    <div class=" p-10 m-10 bg-neutral-1000 gap-2.5 flex flex-col">
+        <p class="text-neutral-50 mb-10">Disabled :</p>
+        <button disabled class="w-80 flex justify-center rounded-4xl py-2 px-6 bg-neutral-50 text-neutral-1000 backdrop:blur-3xl shadow-3xl font-bold text-center hover:bg-neutral-200  disabled:opacity-25 disabled:bg-neutral-500 disabled:pointer-events-none">Create account</button>
+        <button disabled class="w-96 flex justify-center rounded-4xl py-3 px-6  bg-neutral-50 text-neutral-1000 backdrop:blur-3xl shadow-3xl  font-bold text-center hover:bg-neutral-200 mb-8 disabled:opacity-25 disabled:bg-neutral-500 disabled:pointer-events-none">Next</button>
+        <button disabled class="inline-flex font-bold text-neutral-1000 bg-neutral-50  py-2 px-5 text-center justify-center rounded-3.2xl mb-8 hover:bg-neutral-200 disabled:opacity-25 disabled:bg-neutral-500 disabled:pointer-events-none">Follow</button>
+        <button disabled class="text-neutral-50 bg-twitter-blue hover:bg-twitter-blue-hover text-center justify-center  font-inter text-16 font-bold rounded-full py-4 px-20 w-56 disabled:opacity-25 disabled:bg-twitter-blue-disabled disabled:pointer-events-none">Post</button>
+        <button disabled class="text-neutral-50 bg-twitter-blue hover:bg-twitter-blue-hover text-center justify-center font-inter text-16 font-bold  px-6 py-3 rounded-3.2xl disabled:opacity-25 disabled:bg-twitter-blue-disabled disabled:pointer-events-none">Post</button>
+        <button disabled class="text-neutral-50 bg-twitter-blue hover:bg-twitter-blue-hover text-center justify-center font-inter text-16 font-bold rounded-full p-5 px-20 w-96 disabled:opacity-25 disabled:bg-twitter-blue-disabled disabled:pointer-events-none">Post</button>
+        </div>
+
+        <div class="flex w-[598px] h-[58px] pt-5 px-20 justify-center items-center gap-[160px] flex-shrink-0 border-b border-neutral-700 ">
+            <div class="flex flex-col justify-center text-center gap-4"><p class="text-neutral-400 text-base font-medium leading-normal">For you</p>
+            <div class="w-14 h-[3px] rounded-border-radius-30 bg-twitter-blue"></div></div>
+            
+            <div class="flex pb-[16px] justify-center items-center">
+                <p class="text-neutral-50 text-base font-medium leading-normal">
+                Following
+                </p>
+              </div>
+        </div>
+        
+        
+       <section class="flex flex-col gap-6">
+        <div class="flex gap-6 flex-wrap ">
+            <p class="text-neutral-50 font-bold">Default:</p>
+            <img src="../public/images/state-not-selected.svg" alt="" class="flex-shrink-0">
+            <img src="../public/images/group.svg" alt="" class="flex-shrink-0">
+        </div>   
+
+        <div class="flex gap-6 flex-wrap ">
+            <p class="text-neutral-50 font-bold">Default:</p>
+            <img src="/public/images/Home-selected.svg" alt="" class="flex-shrink-0">
+            <img src="/public/images/state-selected.svg" alt="" class="flex-shrink-0">
+        </div>   
+       </section>
+
+       <div class="flex flex-col gap-8 flex-wrap">
+        <p class="font-bold text-white">Icons:</p>
+  
+        <div class="flex items-end gap-[2px]">
+          <img src="../public/images/100.svg" alt="100 icon"/>
+          <img src="../public/images/x.svg" alt="X icon"/>
+        </div>
+
+        <div class="flex gap-5 flex-wrap">
+            <img src="../public/images/more-sv.svg" alt="More icon"/>
+            <img src="../public/images/comment-sv.svg" alt="Comment icon"/>
+            <img src="../public/images/retweet-sv.svg" alt="Retweet icon"/>
+            <img src="../public/images/heart-sv.svg" alt="Heart icon"/>
+            <img src="../public/images/reach-sv.svg" alt="Reach icon"/>
+            <img src="../public/images/share-sv.svg" alt="Share icon"/>
+            <img src="../public/images/calendar-sv.svg" alt="Calendar icon"/>
+            <img src="../public/images/bookmark-sv.svg" alt="Bookmark icon"/>
+        </div>
+
+        <div class="flex gap-5 flex-wrap">
+            <img src="../public/images/retweeted-sv.svg" alt="Retweet icon"/>
+            <img src="../public/images/liked-sv.svg" alt="Heart icon"/>
+            <img src="../public/images/bookmarked-sv.svg" alt="Bookmark icon"/>
+            <img src="../public/images/reach-colored.svg" alt="Reach icon"/>
+            <img src="../public/images/share-colored-sv.svg" alt="Share icon"/>
+      </div>
+
+      <div class="flex gap-5 flex-wrap">
+        <img src="../public/images/cancel.svg" alt="Cancel icon"/>
+        <img src="../public/images/back.svg" alt="Back icon"/>
+        <img src="../public/images/settings.svg" alt="Settings icon"/>
+        <img src="../public/images/correct.svg" alt="Correct icon"/>
+        <img src="../public/images/add-photo.svg" alt="Add photo icon"/>
+      </div>
+
+      <div class="flex gap-5 flex-wrap bg-neutral-700 w-max p-2 rounded-md">
+        <img src="../public/images/visible-t.svg" alt="Eye icon"/>
+        <img src="../public/images/visible-f.svg" alt="Eye icon"/>
+      </div>
+
+    </div>
+  
+    
+</body>
+</html>
